@@ -1818,6 +1818,18 @@ height: 15px;
 margin: auto;
 padding-bottom: 10px;
 }
+
+.container .title {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 940px;
+  font-weight: 100;
+  font-size: 68px;
+  line-height: 68px;
+  color: #B1B100;
+  margin-bottom: 48px;
+}
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;
