@@ -14,6 +14,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
 }
 h1,
 h2,
@@ -109,6 +110,9 @@ nav,
 section {
   display: block;
 }
+section > .row {
+margin-bottom: 10px;
+}
 audio, canvas, video {
   display: inline-block;
   *display: inline;
@@ -183,11 +187,11 @@ textarea {
 body {
   background-color: #ffffff;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  color: #404040;
+  color: #686868;
 }
 .container {
   width: 940px;
@@ -228,13 +232,13 @@ body {
   margin-left: 240px;
 }
 a {
-  color: #0069d6;
+  color: #686868;
   text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
 }
 a:hover {
-  color: #00438a;
+  color: #000000;
   text-decoration: underline;
 }
 .pull-right {
@@ -249,9 +253,37 @@ a:hover {
 .show {
   display: block;
 }
+.show-grid [class*="span"] {
+  background: #EEE;
+  background-image: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #EEE;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-top-left-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+  border-bottom-left-radius: 3px 3px;
+  min-height: 30px;
+  line-height: 30px;
+}
+.show-grid {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
 .row {
   zoom: 1;
-  margin-left: -20px;
+  margin-left: 0px;
+  margin-bottom: 10px;
 }
 .row:before, .row:after {
   display: table;
@@ -264,8 +296,9 @@ a:hover {
 .row > [class*="span"] {
   display: inline;
   float: left;
-  margin-left: 20px;
+  margin-left: 0px;
 }
+
 .span1 {
   width: 40px;
 }
@@ -397,7 +430,7 @@ p {
 }
 p small {
   font-size: 11px;
-  color: #bfbfbf;
+  color: #686868;
 }
 h1,
 h2,
@@ -406,7 +439,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: #404040;
+  color: #686868;
 }
 h1 small,
 h2 small,
@@ -414,7 +447,7 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-  color: #bfbfbf;
+  color: #686868;
 }
 h1 {
   margin-bottom: 18px;
@@ -454,7 +487,7 @@ h5 {
 }
 h6 {
   font-size: 13px;
-  color: #bfbfbf;
+  color: #686868;
   text-transform: uppercase;
 }
 ul, ol {
@@ -474,11 +507,12 @@ ol {
 }
 li {
   line-height: 18px;
-  color: #808080;
+  color: #686868;
 }
 ul.unstyled {
   list-style: none;
   margin-left: 0;
+  color: #686868;
 }
 dl {
   margin-bottom: 18px;
@@ -603,7 +637,7 @@ label,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: normal;
@@ -1355,7 +1389,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar input {
   background-color: #444;
   background-color: rgba(255, 255, 255, 0.3);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: normal;
   font-weight: 13px;
   line-height: 1;
@@ -1770,9 +1804,19 @@ a.menu:after, .dropdown-toggle:after {
   background-color: #f5f5f5;
   margin-bottom: 30px;
   padding: 60px;
+  padding-top: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+}
+#header{
+width: 940px;
+height: 15px;
+margin: auto;
+padding-bottom: 10px;
 }
 .hero-unit h1 {
   margin-bottom: 0;
@@ -1790,12 +1834,33 @@ footer {
   padding-top: 17px;
   border-top: 1px solid #eee;
 }
+.float-border {
+background: transparent url(/assets/line-dot_2px-fd0aa70b62eb18171d84c957c9695f92.png) repeat-x scroll bottom left;
+background-image: url(https://www.ideo.org/assets/line-dot_2px-fd0aa70b62eb18171d84c957c9695f92.png);
+background-repeat-x: repeat;
+background-repeat-y: no-repeat;
+background-attachment: scroll;
+background-position-x: 0%;
+background-position-y: 100%;
+background-origin: initial;
+background-clip: initial;
+background-color: transparent;
+display: inline;
+float: left;
+margin-left: 62px;
+width: 945px;
+height: 3px;
+position: fixed;
+top: 44px;
+left: 0;
+}
 .page-header {
   margin-bottom: 17px;
   border-bottom: 1px solid #ddd;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
 }
 .page-header h1 {
   margin-bottom: 8px;
