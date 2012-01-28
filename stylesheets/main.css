@@ -1,8 +1,25 @@
-title {
-margin-right: 20px;
-width: 940px;
-font-size: 68px;
-line-height: 68px;
-color: #B1B100;
-margin-top: 48px;
+.portfolio {
+  width: 600px;
+float: right;
+}
+
+.alpha-shadow {
+  float: left;
+  background: url(img/shadow1.gif) È
+  no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;
+}
+
+.alpha-shadow div {
+  background: url(shadow2.png) È
+  no-repeat left top !important;
+  padding: 0px 5px 5px 0px;
+}
+
+.alpha-shadow img {
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+
+  padding: 4px;
 }
