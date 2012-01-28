@@ -490,6 +490,14 @@ h6 {
   color: #686868;
   text-transform: uppercase;
 }
+h10 {
+  font-size: 68px;
+  color: #ECD872;
+  width: 940px;
+  display: inline;
+  float: left;
+  line-height: 68px;
+}
 ul, ol {
   margin: 0 0 18px 25px;
 }
